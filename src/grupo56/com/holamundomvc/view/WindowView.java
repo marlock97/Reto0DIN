@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package model;
+package grupo56.com.holamundomvc.view;
 
 /**
  *
  * @author 2dam
  */
-public interface Model {
+public class WindowView {
     
 }
