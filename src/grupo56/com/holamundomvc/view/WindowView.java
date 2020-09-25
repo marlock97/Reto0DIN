@@ -7,8 +7,17 @@ package grupo56.com.holamundomvc.view;
 
 /**
  *
- * @author 2dam
+ * @author Martin Angulo
  */
-public class WindowView {
+public class WindowView implements View{
+
+    /**
+     * Shows the provided message in a window.
+     * @param greeting String containing the message to view.
+     */
+    @Override
+    public void showGreeting(String greeting) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
