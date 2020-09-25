@@ -6,7 +6,7 @@
 package grupo56.com.holamundomvc.view;
 
 /**
- *
+ * View specification for GUI.
  * @author Martin Angulo
  */
 public class WindowView implements View{
