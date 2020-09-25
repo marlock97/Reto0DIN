@@ -6,9 +6,16 @@
 package grupo56.com.holamundomvc.view;
 
 /**
- *
- * @author 2dam
+ * View factory to create different views.
+ * @author Martin Angulo
  */
 public class ViewFactory {
     
+    /**
+     * Returns a new view.
+     * @return
+     */
+    public View getView() {
+        return new TextView();
+    }
 }
