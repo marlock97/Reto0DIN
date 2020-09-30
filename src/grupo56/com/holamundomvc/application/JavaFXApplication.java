@@ -5,6 +5,7 @@
  */
 package grupo56.com.holamundomvc.application;
 
+import grupo56.com.holamundomvc.view.View;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.StackPane;
@@ -15,7 +16,7 @@ import javafx.stage.Stage;
  * Application class that uses JavaFX to create windows.
  * @author Martin Angulo
  */
-public class JavaFXApplication extends Application {
+public class JavaFXApplication extends Application implements View {
     /**
      * @param args the command line arguments
      */
@@ -38,5 +39,10 @@ public class JavaFXApplication extends Application {
         root.getChildren().add(text);
         primaryStage.setScene(new Scene(root, 300, 250));
         primaryStage.show();
+    }
+
+    @Override
+    public void showGreeting(String greeting) {
+        launch();
     }
 }
