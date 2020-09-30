@@ -3,23 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package grupo56.holamundomvc.view;
+package grupo56.com.holamundomvc.view;
 
 /**
- * implementa la view en interfaz tipo texto
- *
- * @author Lorena Fernández Íñigo
+ * View impementation that shows a greeting on console.
+ * @author Martin Angulo
  */
-public class ViewImplementation implements View {
-
+public class TextView implements View {
     /**
-     * Enseña el greeting por pantalla
-     *
-     * @param greeting
+     * Shows a greeting in the UI.
+     * @param greeting A String containing the greeting to show.
      */
     @Override
     public void showGreeting(String greeting) {
         System.out.println(greeting);
     }
-
 }

@@ -3,18 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package grupo56.holamundomvc.view;
+package grupo56.com.holamundomvc.view;
 
 /**
- * Contiene el metodo view
- *
- * @author Lorena Fernández Íñigo
+ * Contains the showGreeting method to be used by a controller.
+ * @author Martin Angulo
  */
 public interface View {
-/**
- * Enseña el saludo
- * @param greeting 
- */
     
+    /**
+     * Shows a greeting in the UI.
+     * @param greeting A String containing the greeting to show.
+     */
     public void showGreeting(String greeting);
 }

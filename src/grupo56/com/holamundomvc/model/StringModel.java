@@ -3,16 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package grupo56.holamundomvc.model;
+package grupo56.com.holamundomvc.model;
 
 /**
- *
- * @author lorena
+ * Model implementation that returns a greeting saved in the model.
+ * @author Martin Angulo
  */
-public class ModelImplementation implements Model {
+public class StringModel implements Model {
+    
     private final String greeting;
 
-    public ModelImplementation() {
+    /**
+     * StringModel constructor, sets greeting to default.
+     */
+    public StringModel() {
         this.greeting = "Hello World!";
     }
     

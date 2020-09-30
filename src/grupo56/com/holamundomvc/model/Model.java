@@ -3,19 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package grupo56.holamundomvc.model;
+package grupo56.com.holamundomvc.model;
 
 /**
- * Contiene el metodo model
- *
- * @author Lorena Fernández Íñigo
+ * Declares the getGreeting method to be used by a controller.
+ * @author Martin Angulo
  */
 public interface Model {
 
     /**
-     * Devuelve el greeting de la BD y/o texto
-     *
-     * @return
+     * Returns a String containing the greeting.
+     * @return String containing the greeting.
      */
     public String getGreeting();
 }
