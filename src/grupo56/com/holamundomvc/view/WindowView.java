@@ -5,19 +5,42 @@
  */
 package grupo56.com.holamundomvc.view;
 
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.layout.StackPane;
+import javafx.scene.text.Text;
+import javafx.stage.Stage;
+
 /**
  * View specification for GUI.
  * @author Martin Angulo
  */
-public class WindowView implements View{
-
+public class WindowView extends Application implements View {
+    private Text text_;
+    
+    /**
+     * Entry point of all JavaFX applications.
+     * @param primaryStage Root Stage.
+     */
+    @Override
+    public void start(Stage primaryStage) {
+        primaryStage.setTitle("Hello World! - MVC");
+        
+        text_ = new Text();
+        
+        StackPane root = new StackPane();
+        root.getChildren().add(text_);
+        primaryStage.setScene(new Scene(root, 300, 250));
+        primaryStage.show();
+    }
+    
     /**
      * Shows the provided message in a window.
      * @param greeting String containing the message to view.
      */
     @Override
-    public void showGreeting(String greeting) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
+    public void showGreeting(String greeting) {  
+        launch();
+        text_.setText(greeting);
+    }   
 }
