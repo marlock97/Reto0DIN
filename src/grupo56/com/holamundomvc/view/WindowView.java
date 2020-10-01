@@ -16,8 +16,7 @@ import javafx.stage.Stage;
  * @author Martin Angulo
  */
 public class WindowView extends Application implements View {
-    private Text text_;
-    
+
     /**
      * Entry point of all JavaFX applications.
      * @param primaryStage Root Stage.
@@ -26,10 +25,17 @@ public class WindowView extends Application implements View {
     public void start(Stage primaryStage) {
         primaryStage.setTitle("Hello World! - MVC");
         
-        text_ = new Text();
-        
         StackPane root = new StackPane();
+        
+        Text text_ = new Text();
+        //Get greeting from parameters.
+        String greeting = getParameters().getRaw().toString();
+        //Cleanup greeting string.
+        greeting = greeting.replace("[", "");
+        greeting = greeting.replace("]", "");
+        text_.setText(greeting);
         root.getChildren().add(text_);
+        
         primaryStage.setScene(new Scene(root, 300, 250));
         primaryStage.show();
     }
@@ -39,8 +45,7 @@ public class WindowView extends Application implements View {
      * @param greeting String containing the message to view.
      */
     @Override
-    public void showGreeting(String greeting) {  
-        launch();
-        text_.setText(greeting);
+    public void showGreeting(String greeting) {
+        launch(greeting);
     }   
 }
