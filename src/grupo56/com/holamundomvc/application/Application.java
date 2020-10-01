@@ -13,7 +13,6 @@ import grupo56.com.holamundomvc.view.ViewFactory;
 
 /**
  * Application class with the main function.
- *
  * @author Martin Angulo
  */
 public class Application {
