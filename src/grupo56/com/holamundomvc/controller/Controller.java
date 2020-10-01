@@ -10,19 +10,19 @@ import grupo56.com.holamundomvc.view.View;
 
 /**
  *
- * @author Martin programacion a pares roles: conductor: lorena observador:
- * martin
+ * @author Martin 
+ * programacion a pares roles:
+ * conductor: lorena 
+ * observador: martin
  */
 public class Controller {
 
     /*
-     * shows the greeting from the model
+     * Shows the greeting from the model
      * @param model model to use
      * @param view view to use
-     */
-    
+     */    
     public void run(Model model, View view) {
         view.showGreeting(model.getGreeting());
     }
-
 }

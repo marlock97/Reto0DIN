@@ -6,7 +6,7 @@
 package grupo56.com.holamundomvc.model;
 
 /**
- *
+ * ModelFactory for model creation
  * @author lorena fdez
  * programacion a pares roles:
  * conductor: lorena
@@ -36,5 +36,4 @@ public class ModelFactory {
                 return new StringModel();
         }
     }
-    
 }

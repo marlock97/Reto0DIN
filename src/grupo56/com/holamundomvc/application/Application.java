@@ -17,7 +17,6 @@ import grupo56.com.holamundomvc.view.ViewFactory;
  * @author Martin Angulo
  */
 public class Application {
-
     /**
      * @param args the command line arguments
      */
