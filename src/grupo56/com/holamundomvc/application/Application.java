@@ -20,7 +20,7 @@ public class Application {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        View v = ViewFactory.getInstance().getView(ViewFactory.types.TEXT);
+        View v = ViewFactory.getInstance().getView(ViewFactory.types.WINDOW);
         Model m = new StringModel();
         
         v.showGreeting(m.getGreeting());
