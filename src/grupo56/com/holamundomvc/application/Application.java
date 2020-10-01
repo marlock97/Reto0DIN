@@ -5,13 +5,15 @@
  */
 package grupo56.com.holamundomvc.application;
 
+import grupo56.com.holamundomvc.controller.Controller;
 import grupo56.com.holamundomvc.model.Model;
-import grupo56.com.holamundomvc.model.StringModel;
+import grupo56.com.holamundomvc.model.ModelFactory;
 import grupo56.com.holamundomvc.view.View;
 import grupo56.com.holamundomvc.view.ViewFactory;
 
 /**
  * Application class with the main function.
+ *
  * @author Martin Angulo
  */
 public class Application {
@@ -20,9 +22,9 @@ public class Application {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        View v = ViewFactory.getInstance().getView(ViewFactory.types.TEXT);
-        Model m = new StringModel();
-        
-        v.showGreeting(m.getGreeting());
+        View view = ViewFactory.getInstance().getView(ViewFactory.types.TEXT);
+        Model model = ModelFactory.getInstance().getModel(ModelFactory.types.TEXT);
+        Controller controller = new Controller();
+        controller.run(model, view);
     }
 }
