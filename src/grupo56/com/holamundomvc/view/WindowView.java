@@ -19,7 +19,7 @@ public class WindowView extends Application implements View {
 
     /**
      * Entry point of all JavaFX applications.
-     * @param primaryStage Root Stage.
+     * @param primaryStage Root Stage
      */
     @Override
     public void start(Stage primaryStage) {
