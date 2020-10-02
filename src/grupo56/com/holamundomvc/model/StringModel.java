@@ -37,7 +37,6 @@ public class StringModel implements Model {
 
     /**
      * Connects to the database.
-     *
      * @return Connection
      */
     public Connection Connect() {
@@ -76,6 +75,10 @@ public class StringModel implements Model {
         }
     }
 
+    /**
+     * Gets the greeting from the database.
+     * @return String with the greeting.
+     */
     @Override
     public String getGreeting() {
         String greeting = null;
