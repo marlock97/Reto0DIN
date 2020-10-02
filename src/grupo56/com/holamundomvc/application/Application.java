@@ -22,7 +22,7 @@ public class Application {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        View view = ViewFactory.getInstance().getView(ViewFactory.types.TEXT);
+        View view = ViewFactory.getInstance().getView(ViewFactory.types.WINDOW);
         Model model = ModelFactory.getInstance().getModel(ModelFactory.types.TEXT);
         Controller controller = new Controller();
         controller.run(model, view);
