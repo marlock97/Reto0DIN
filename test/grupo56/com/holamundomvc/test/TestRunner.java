@@ -11,7 +11,7 @@ import org.junit.runner.notification.Failure;
 
 /**
  *
- * @author Lorena
+ * @author Matteo
  */
 public class TestRunner {
     public static void main(String[] args) {
