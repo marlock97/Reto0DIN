@@ -17,7 +17,7 @@ import org.junit.Test;
 
 /**
  *
- * @author Lorena
+ * @author Matteo
  */
 public class TestTextView {
 
