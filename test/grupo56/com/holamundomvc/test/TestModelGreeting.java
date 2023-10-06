@@ -13,7 +13,7 @@ import org.junit.Test;
 
 /**
  *
- * @author lorena
+ * @author matteo
  */
 public class TestModelGreeting {
 
