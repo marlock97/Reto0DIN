@@ -7,9 +7,9 @@ package grupo56.com.holamundomvc.model;
 
 /**
  * ModelFactory for model creation
- * @author lorena fdez
+ * @author matteo fdez
  * programacion a pares roles:
- * conductor: lorena
+ * conductor: matteo
  * observador: martin
  */
 public class ModelFactory {
