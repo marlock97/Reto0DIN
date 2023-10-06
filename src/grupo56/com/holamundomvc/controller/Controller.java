@@ -12,7 +12,7 @@ import grupo56.com.holamundomvc.view.View;
  *
  * @author Martin 
  * programacion a pares roles:
- * conductor: lorena 
+ * conductor: matteo 
  * observador: martin
  */
 public class Controller {
